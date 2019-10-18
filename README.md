@@ -1,6 +1,6 @@
 # **Project** **Transparency**
 
-![Jordan Belfort](https://media.giphy.com/media/W12WAzuqod9VS/giphy.gif)
+![Jordan Belfort](https://media.giphy.com/media/KXyKSpfcZ0GUU/giphy.gif)
 
 ## Project Description
 
