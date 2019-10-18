@@ -12,6 +12,10 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      // agencyList: [],
+      // agency_name: "",
+      // budget_authority_amount:"",
+      // percentage_of_total_budget:""
 
     }
   }

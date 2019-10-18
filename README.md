@@ -1,10 +1,10 @@
 # **Project** **Transparency**
 
-![Jordan Belfort](https://media.giphy.com/media/KXyKSpfcZ0GUU/giphy.gif)
+![Robert De Niro as Jimmy Conway](https://media.giphy.com/media/KXyKSpfcZ0GUU/giphy.gif)
 
 ## Project Description
 
-This project will reveal the national budget each top tier federal agency was granted last year, 2018. It will feature a drop down menu that lists 100 top tier federal agencies on the left half of the page. The right half of the page will feature a Pie Chart that will represent the 4.11 Trillion our government spent last year.  Whenever an agency is selected from the drop down menu, a slice of the pie chart will highlight the percent of the national budget that that agency spent. 
+This project will reveal the national budget each top tier federal agency was granted last year, 2018. It will feature a drop down menu that lists 101 top tier federal agencies on the left half of the page. The right half of the page will feature a Pie Chart that will represent the total budget authority amount from last year.  Whenever an agency is selected from the drop down menu, a slice of the pie chart will highlight the percent of the national budget that that agency spent. 
 
 ## MVP
 
@@ -21,10 +21,11 @@ This project will reveal the national budget each top tier federal agency was gr
 * Display a Pie Chart that responds when the user selects a federal agency from the drop down menu. It will render a  highlighted slice of the pie chart representing that agency's portion of the national budget. 
 
 ## React Component Hierarchy
-
-* < TitlePage / >
+* < App / >
+  * < TitlePage / >
   * < Header / >
   * < Main / >
+  * < AgencyList / >
   * < Chart / >
   * < Footer / >
 
