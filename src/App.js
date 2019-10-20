@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import AgencyList from './components/AgencyList';
 import Chart from './components/Chart';
+import Descriptions from './components/Descriptions';
 
 
 class App extends React.Component {
@@ -13,16 +14,22 @@ class App extends React.Component {
     super();
     this.state = {
       agencies: [],
-      // agency_name: "",
-      // budget_authority_amount:"",
-      // percentage_of_total_budget:""
-
+      agency_id:""
     }
   }
+
   async componentDidMount() {
     const agencies = await getAgencies();
-    this.setState({ agencies })
+    const agency_id = agencies.agency_id
+    this.setState({
+      agencies: agencies,
+      agency_id: agency_id
+
+    })
   }
+
+
+
 
   render() {
     return (
@@ -30,6 +37,7 @@ class App extends React.Component {
         <Header />
         <main>
           <AgencyList agencies={this.state.agencies} />
+          <Descriptions agencies={this.state.agencies} />
           <Chart />
         </main>
         <Footer />

@@ -9,7 +9,7 @@ This project will reveal the national budget each top tier federal agency was gr
 ## MVP
 
 * Project Transparency will be gathering it's data from the open source API, [usaspending.gov](https://www.usaspending.gov/#/). 
-* It will hit two different endpoints rendering 2 different sets of data. 
+<!-- * It will hit two different endpoints rendering 2 different sets of data.  -->
 * The data will feature a list of 100 top tier federal agencies, their Budget Authority for 2018 and a hardcoded description for each agency.
 * It will include six or more components.
 * Include class and functional components.
