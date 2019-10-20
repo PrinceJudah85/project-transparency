@@ -3,9 +3,13 @@ import React from 'react';
 
 function Header() {
   return (
-    <div>
-
-
+    <div className="header">
+      {/* <div id="home">
+        <Link exact to="/"> Home </Link>
+      </div>
+      <div id="title">
+        <h1>Transparency</h1>
+      </div> */}
     </div>
   )
 }

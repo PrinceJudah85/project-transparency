@@ -25,8 +25,8 @@ This project will reveal the national budget each top tier federal agency was gr
   * < TitlePage / >
   * < Header / >
   * < Main / >
-  * < AgencyList / >
-  * < Chart / >
+    * < AgencyList / >
+    * < Chart / >
   * < Footer / >
 
 ## WireFrame for Web & Mobile App

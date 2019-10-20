@@ -4,35 +4,34 @@ import './App.css';
 import { getAgencies } from './services/api-helper';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Main from './components/Main';
-import Chart from './components/Chart'
+import AgencyList from './components/AgencyList';
+import Chart from './components/Chart';
 
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      // agencyList: [],
+      agencies: [],
       // agency_name: "",
       // budget_authority_amount:"",
       // percentage_of_total_budget:""
 
     }
   }
-
-  agencyList = async () => {
+  async componentDidMount() {
     const agencies = await getAgencies();
-    console.log(agencies)
+    this.setState({ agencies })
   }
-
-
 
   render() {
     return (
       <div className="app">
         <Header />
-        <Main agencyList={this.agencyList} />
-        <Chart />
+        <main>
+          <AgencyList agencies={this.state.agencies} />
+          <Chart />
+        </main>
         <Footer />
       </div>
 
