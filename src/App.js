@@ -14,7 +14,7 @@ class App extends React.Component {
     super();
     this.state = {
       agencies: [],
-      agency_id:""
+      // agency_id: ""
     }
   }
 
@@ -23,7 +23,7 @@ class App extends React.Component {
     const agency_id = agencies.agency_id
     this.setState({
       agencies: agencies,
-      agency_id: agency_id
+      // agency_id: agencies
 
     })
   }
