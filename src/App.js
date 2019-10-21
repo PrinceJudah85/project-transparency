@@ -14,18 +14,18 @@ class App extends React.Component {
     super();
     this.state = {
       agencies: [],
-      agency_id: "",
       value: ''
+      // agency_id: "",
     }
   }
 
   async componentDidMount() {
     const agencies = await getAgencies();
-    const agency_id = agencies.agency_id;
+    // const agency_id = agencies[25].agency_id;
     console.log(agencies)
     this.setState({
       agencies: agencies,
-      agency_id: agency_id
+      // agency_id: agency_id
 
     })
   }
@@ -48,7 +48,10 @@ class App extends React.Component {
         <main>
           <AgencyList agencies={this.state.agencies} handleChange={this.handleChange} />
           <Descriptions value={this.state.value} />
-          <Chart />
+          <Chart
+            agencies={this.state.agencies}
+            value={this.state.value}
+          />
         </main>
         <Footer />
       </div>
