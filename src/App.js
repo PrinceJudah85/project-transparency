@@ -33,7 +33,7 @@ class App extends React.Component {
   handleChange = (event) => {
     let value = event.target.value
     this.setState({
-      value: value
+      value
     })
     console.log(value)
   }
@@ -52,7 +52,6 @@ class App extends React.Component {
         </main>
         <Footer />
       </div>
-
     );
   }
 }
