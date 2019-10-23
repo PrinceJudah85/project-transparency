@@ -1,7 +1,6 @@
 import React from 'react'
 
 export default function Descriptions(props) {
-  console.log(props)
   const showDescription = () => {
     switch (props.value) {
 

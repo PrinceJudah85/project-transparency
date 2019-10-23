@@ -24,7 +24,6 @@ class App extends React.Component {
     let value = event.target.value
     this.setState({
       value: value
-     
     })
   }
 
