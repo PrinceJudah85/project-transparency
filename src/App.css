@@ -1,0 +1,131 @@
+body {
+  margin:0;
+}
+
+header {
+  display:grid;
+  grid-template-columns:35% 65%;
+  background-color:#b5bdc9;
+  padding-bottom:.1em;
+  padding-top:1.5em;
+}
+
+footer {
+  text-align:center;
+}
+
+h3 {
+  font-family:'Yrsa', sans-serif;
+  font-size:1.1em;
+  margin-top:5px;
+  line-height:1.6em;
+}
+
+p {
+  font-family:'PT Mono', monospace;
+  font-size:1.2em;
+  line-height:1.7em;
+  margin-top:3em;
+}
+
+a {
+  font-family:'PT Mono', monospace;
+  text-decoration: none;
+  color:black;
+  font-weight:700;
+  font-size:1.3em;
+}
+
+#header-font {
+  text-decoration: none;
+  margin-top:0;
+  margin-left:-1.9em;
+  font-family:'Cinzel', monospace; 
+  font-size:3em;
+  font-weight:700;
+  color: rgb(255, 255, 255, 1);
+  letter-spacing:.3em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.title-font {
+  margin-top:0;
+  text-align:center;
+  text-decoration: none;
+  font-family:'Cinzel', monospace; 
+  font-size:4em;
+  font-weight:700;
+  color: rgb(0 0 0);
+  letter-spacing:.3em;
+  text-shadow: -1px 0 white, 0 2px white, 2px 0 white, 0 -1px white;
+}
+
+select {
+  height:2.5em;
+  font-family:'Yrsa ', sans-serif;
+  font-size:1em;
+  border: 2px dashed black;
+}
+
+svg {
+  height:45em;
+  width:130%;
+  margin-top:-5em;
+  margin-right:4em;
+}
+
+#quote {
+  margin:-1.8em;
+  margin-left:1em;
+  margin-right:60%;
+}
+
+#home {
+  margin-top:-1.2em;
+}
+
+#title-page {
+  margin:0;
+  height:100vh;
+  width:100%;
+  background-size:cover;
+  background-image:url(https://pastepic.xyz/images/2019/10/23/Capitol-Hill-Congress-Buildingb17517d9569cf9a1.jpg);
+  background-repeat:no-repeat;
+}
+#title {
+  justify-self:start;
+}
+#grid-this {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  border-bottom:2px dashed black;
+}
+#flex-this {
+  display:flex;
+}
+#title-info {
+  border: 2px solid white;
+}
+#highlighter {
+  color:red;
+}
+
+#left-side {
+  border-right:2px solid black;
+  margin-left:1em;
+
+}
+#right-side {
+  justify-self:center;
+  width:50%;
+  margin-right:6em;
+}
+#author {
+  margin-top:.5em;
+  font-size:1.1em;
+}
+#mentions {
+  text-align:left;
+  font-size:.8em;
+}
+

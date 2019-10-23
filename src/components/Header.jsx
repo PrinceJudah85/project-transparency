@@ -1,16 +1,16 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <div className="header">
-      {/* <div id="home">
+    <header>
+      <div id="home">
         <Link exact to="/"> Home </Link>
       </div>
       <div id="title">
-        <h1>Transparency</h1>
-      </div> */}
-    </div>
+        <Link exact to="/"><h1 id="header-font">Transparency</h1></Link>
+      </div>
+    </header>
   )
 }
 
