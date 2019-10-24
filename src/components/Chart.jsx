@@ -4,7 +4,7 @@ import ReactSvgPieChart from "react-svg-piechart";
 const makeRandomColor = () => {
   return '#' + Math.floor(Math.random() * 16777215).toString(16)
 }
-// Study Conditional Statements below *** Kudos to David for his help with this ***
+// Shoutout to David for helping me with the filtering and conditional rendering below. 
 export default function Chart(props) {
   let data;
   if (props.value === '') {
@@ -29,8 +29,6 @@ export default function Chart(props) {
     ]
   }
 
-
-
   return (
     <div id="chart-side">
       <p id="restrictions">Agencies with a budget less than $40 billion won't render</p>
@@ -39,25 +37,16 @@ export default function Chart(props) {
       <ReactSvgPieChart
         data={data}
         expandOnHover={true}
-        // viewBoxSize={50, 50}
         // If you need expand on hover (or touch) effect
         // expandedIndex={props.agencies.find(agency => agency.agency_id === parseInt(props.value)
         // If you need custom behavior when sector is hovered (or touched)
-        // expandSize={0}
         // onSectorHover={(data, index, event) => {
         //   const currentAgency = props.agencies.find(agency => agency.agency_id === parseInt(props.value))
         //   if (currentAgency.agency_name === data.title) {
         //     event.target
         //   } 
         // }}
-        // onSectorHover={(data, index, event) => {
-        //   if (data = ) {
-        //     console.log("Mouse enter - Index:", index, "Data:", data, "Event:", event)
-        //   } else {
-        //     console.log("Mouse leave - Index:", index, "Event:", event)
-        //   }
-        // }}
-        transitionDuration='1s'
+        transitionDuration = '1s'
       />
     </div>
   )

@@ -11,7 +11,7 @@ function Footer() {
           Descriptions for Agencies pulled from <a href="https://www.usa.gov/federal-agencies">www.usa.gov/federal-agencies
           </a>
           <br />
-          Honorable mentions to : David Whitlatch , Shay Kelley and Svetla Syrimis for the much needed support.
+          Honorable mentions to : David Whitlatch , Shay Kelley, Brian Weitz and Svetla Syrimis for the much needed support.
         </p>
       </div>
 
