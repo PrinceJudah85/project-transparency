@@ -4,7 +4,7 @@ import ReactSvgPieChart from "react-svg-piechart";
 const makeRandomColor = () => {
   return '#' + Math.floor(Math.random() * 16777215).toString(16)
 }
-
+// Study Conditional Statements below *** Kudos to David for his help with this ***
 export default function Chart(props) {
   let data;
   if (props.value === '') {

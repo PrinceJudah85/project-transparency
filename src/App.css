@@ -54,6 +54,7 @@ a {
   letter-spacing:.3em;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
 .title-font {
   margin-top:0;
   text-align:center;
@@ -98,21 +99,26 @@ svg {
   background-image:url(https://pastepic.xyz/images/2019/10/23/Capitol-Hill-Congress-Buildingb17517d9569cf9a1.jpg);
   background-repeat:no-repeat;
 }
+
 #title {
   justify-self:start;
 }
+
 #grid-this {
   display:grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
   border-bottom:2px dashed black;
 }
+
 #flex-this {
   display:flex;
 }
+
 #title-info {
   border: 2px solid white;
 }
+
 #highlighter {
   color:red;
   font-size:.95em;
@@ -121,28 +127,106 @@ svg {
 #left-side {
   border-right:2px solid black;
   margin-left:1em;
-
 }
+
 #right-side {
   justify-self:center;
   width:50%;
   margin-right:6em;
 }
+
 #author {
   font-family: 'Yrsa', monospace;
   margin-top:.5em;
   font-size:1.1em;
 }
+
 #mentions {
   font-family:'Yrsa', monospace;
   text-align:left;
   font-size:.8em;
 }
+
 #restrictions {
   font-family: 'Yrsa';
   font-size:1em;
   color:red;
   text-align:center;
+}
+
+@media only screen and (max-width:500px)  {
+html {
+  font-size:10px;
+}
+body {
+  margin:0;
+}
+
+#title-page {
+  background-image: url(https://pastepic.xyz/images/2019/10/24/brianbakale_winter-evening-on-the-washington-monument-grounds_yesmydccool2b1b946401949cf9.jpg);
+  background-size:100% 100%;
+
+}
+.title-font {
+  font-size: 2em;
+  padding-top:1em;
+}
+
+#quote {
+  margin-right:16px;
+  margin-top:1.5em;
+  text-align:center;
+  background-color:#d6d4ce;
+  opacity:.7;
+}
+
+#header-font {
+  font-size:2em;
+  text-align:center;
+  margin-left:.7em;
+}
+
+#grid-this {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+#home {
+  display:none;
+}
+
+header {
+  display:block;
+}
+
+#agency-info {
+  font-size:18px;
+  line-height:20px;
+}
+
+p {
+  margin-top:-1em;
+  font-size:16px;
+}
+
+svg {
+  height:70%;
+  padding-top:3em;
+  margin-top:-1em;
+}
+
+#restrictions {
+  text-align:center;
+  margin-top:2em;
+  margin-left:4em;
+  font-size:13px;
+}
+
+select {
+  font-size:1.2em;
+  width:90%;
+}
+
 }
 
 

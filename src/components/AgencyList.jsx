@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrencyFormat from 'react-currency-format';
 
 export default function AgencyList(props) {
   console.log(props.value)
@@ -13,14 +14,20 @@ export default function AgencyList(props) {
           < option value={agency.agency_id} key={agency.agency_id} id={agency.agency_id} > {agency.agency_name}</option>
         ))}
       </select>
-      {/* STUDY THE TERNARY BELOW */}
+      {/* STUDY THE TERNARY BELOW ---- Kudos to Night Brian for helping me with this*/}
       {!props.value ?
         <div>
         </div>
         :
         props.agencies.map(agency => (
           (agency.agency_id === parseInt(props.value)) &&
-          <h4>Budget Authority Amount:<br />{agency.budget_authority_amount}</h4>
+          <h4>Budget Authority Amount:
+            <CurrencyFormat
+              value={agency.budget_authority_amount}
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'} />
+          </h4>
         ))}
     </div >
   )
